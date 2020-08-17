@@ -1,0 +1,57 @@
+<!Doctype html>
+<html>
+<head>
+    <title>What am i doing currently ?</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+</head>
+<body onload="fetchChores() && fetchBooks()">
+<script src="data.js"></script>
+<div class="parent">
+    <div id="header">
+        <h1 class="name">onePlusHalf</h1>
+        <div class="nav">
+            <ul>
+                <li class="choresList active" onclick="updateDivColors('choresList')">
+                    <a href="#sectionWorking">Working / Studying</a>
+                </li>
+                <li class="booksList">
+                    <a href="#sectionBooks" onclick="updateDivColors('booksList')">Books i've Read</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--        <section id="sidebar">-->
+<!--            <div class="inner">-->
+<!--                <ul>-->
+<!--                    <li class="choresList">-->
+<!--                        <a href="#sectionWorking" onclick="updateDivColors('choresList')">Working / Studying</a>-->
+<!--                    </li>-->
+<!--                    <li class="booksList">-->
+<!--                        <a href="#sectionBooks" onclick="updateDivColors('booksList')">Books i've Read</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </section>-->
+    <div class="content">
+        <section id="sectionWorking">
+            <div class="working">
+                <h2>I am currently working/studying : </h2>
+                <ol></ol>
+                <input type="button" value="Save List" onclick="saveList()"/>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section id="sectionBooks">
+            <div class="books">
+                <h2>Books i've read : </h2>
+                <ol></ol>
+                <input type="button" value="Save List" onclick="saveList()"/>
+
+            </div>
+        </section>
+    </div>
+</div>
+<div class="loader"/>
+</body>
+</html>

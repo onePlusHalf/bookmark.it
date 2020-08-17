@@ -1,0 +1,128 @@
+body {
+    background: #2E3B49;
+    /*background: #000;*/
+    box-shadow: 0 2px 5px 6px teal;
+}
+
+.parent {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+	display: none;
+    background-color: black;
+
+}
+#header {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    color: white;
+    margin-left: 37%;
+    font-family: cursive;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18vw;
+}
+
+#sidebar {
+    position: fixed;
+    width: 17vw;
+    height: 100%;
+    background-color: black;
+}
+
+
+.nav {
+    /*margin-top: 100%;*/
+    display: flex;
+    flex-direction: row;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+ol li {
+    height: 40px;
+    width: 75vw;
+    margin-top: 8px;
+    font-size: large;
+	border-radius: 7px;
+    box-shadow: 0 2px 5px 6px teal;
+}
+
+.odd {
+    background-color: pink;
+}
+
+.even {
+    background-color: #72b6be;
+
+}
+
+input[type="button"] {
+    width: 100px;
+    height: 25px;
+    color: white;
+    background: black;
+    border: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    list-style: none;
+    margin-left: 38%;
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px;
+    line-height: 5vh;
+    box-shadow: 0 2px 5px 6px teal;
+}
+
+ul li.active{
+    background-color: lightpink;
+}
+
+.working, .books {
+    background-color: black;
+    width: 80vw;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.loader {
+	margin-left: 45%;
+	margin-top: 20%;
+    border: 16px solid #f3f3f3;
+    border-radius: 90%;
+	border-top: 16px solid #3498db;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s alternate-reverse infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
